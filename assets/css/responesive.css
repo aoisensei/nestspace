@@ -1,0 +1,278 @@
+/* PC */
+@media (min-width: 1024px) {
+    .content__head {
+        max-width: 50%;
+    }
+
+    .sub-title {
+        max-width: 20%;
+    }
+
+    .main-block {
+        max-width: 80%;
+    }
+
+    .main-block .main-desc {
+        max-width: 40%;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .ti-menu {
+        display: block;
+    }
+
+    .ti-menu.close {
+        display: none;
+    }
+
+    .ti-close.open {
+        display: block;
+    }
+
+    .ti-close {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__icon {
+        display: none;
+    }
+
+    .sub-title {
+        max-width: 20%;
+    }
+
+    .content__head {
+        max-width: 50%;
+    }
+
+    .main-block {
+        max-width: 80%;
+    }
+
+    .main-block .main-desc {
+        max-width: 40%;
+    }
+
+    .main-img {
+        max-width: 50%;
+    }
+
+    .menu-respone.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 90;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 9.3rem;
+        background-color: #a8a6a1;
+        animation: showMenu .1s ease-in-out;
+    }
+    
+    .menu-respone__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-respone__navbar {
+        text-decoration: none;
+        font-size: 4.5rem;
+        font-weight: 500;
+        color: #fff;
+        margin: 2rem 0;
+    }
+    
+    .menu-respone__icon {
+        position: absolute;
+        bottom: 5rem;
+    }
+    
+    .iconic {
+        text-decoration: none;
+        color: #fff;
+        font-size: 3rem;
+        margin: 0 1.5rem;
+    }
+
+    .form__register,
+    .form__login {
+        width: 40%;
+        height: 50%;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    #header {
+        padding: 3rem 3rem;
+    }
+
+    .ti-menu {
+        display: block;
+    }
+
+    .ti-menu.close {
+        display: none;
+    }
+
+    .ti-close {
+        display: none;
+    }
+    
+    .ti-close.open {
+        display: block;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__logo {
+        max-height: 3rem;
+    }
+
+    .header__icon {
+        display: none;
+    }
+
+    .slider__img .pic {
+        width: 100%;
+        height: 40rem;
+    }
+
+    .sub-title {
+        max-width: 50%;
+    }
+
+    .slick-prev {
+        left: 35%;
+    }
+    
+    .slick-next {
+        right: 35%;
+    }
+
+    .slick-arrow {
+        top: 90%;
+        max-width: 4rem;
+        max-height: 4rem;
+        opacity: 1;
+    }
+
+    .content__head {
+        max-width: 90%;
+    }
+
+    .content__option {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .content__option .col {
+        width: 90%;
+    }
+
+    .main-main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        margin-bottom: 10rem
+    }
+
+    .reverse-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        margin-bottom: 10rem
+    }
+
+    .main-block {
+        max-width: 100%;
+    }
+
+    .main-desc {
+        max-width: 100%;
+    }
+
+    .main-img {
+        max-width: 90%;
+    }
+
+    .menu-respone.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 90;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 9.3rem;
+        background-color: #a8a6a1;
+        animation: showMenu .1s ease-in-out;
+    }
+    
+    .menu-respone__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-respone__navbar {
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 500;
+        color: #fff;
+        margin: 2rem 0;
+    }
+    
+    .menu-respone__icon {
+        position: absolute;
+        bottom: 3rem;
+    }
+    
+    .iconic {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+        margin: 0 1.5rem;
+    }
+
+    .form__register,
+    .form__login {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+
+@keyframes showMenu {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
